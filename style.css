@@ -1,0 +1,46 @@
+/* standard in every project */
+* {
+    margin:0;
+    padding:0; 
+}
+
+h1 {
+    color:red;
+}
+
+nav {
+    background-color: green;
+    align-items: left;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 20px; /* 30px - top bottom 20px left right */
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 25px 50px;
+}
+
+.threeColumns {
+    float: left;
+    width: 31.33%;
+    padding: 0px;
+}
+
+.columns:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .threeColumns {
+        width:100%;
+    }
+    * {
+        background-color: lime;
+    }
+    .title {
+        font-size: 100px;
+    }
+}
